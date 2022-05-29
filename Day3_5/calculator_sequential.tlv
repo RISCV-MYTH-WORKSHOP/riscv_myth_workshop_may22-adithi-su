@@ -14,9 +14,9 @@
    $prod[31:0] = $val1[31:0] *  $val2[31:0];
    $quot[31:0] = $val1[31:0] /  $val2[31:0];
    
-   $out[31:0] =   $reset ? 32'b0 : ($op[0]==2'b00) ? $sum:
-                                       ($op[1]==2'b01) ? $diff:
-                                          ($op[2]==2'b10) ? $prod: $quot;
+   $out[31:0] =   $reset ? 32'b0 : ($op[1:0]==2'b00) ? $sum:
+                                       ($op[1:0]==2'b01) ? $diff:
+                                          ($op[1:0]==2'b10) ? $prod: $quot;
   
    // Assert these to end simulation (before Makerchip cycle limit).
    *passed = *cyc_cnt > 40;
