@@ -28,4 +28,8 @@ The operator >> in ```>>1$num``` and ```>>2$num``` gives the value of that signa
 Code is written under ```|pipe``` scope with stages defined as ```@1```,```@2``` and so on.
 * <a href="https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_may22-adithi-su/blob/master/Day3_5/calculator_with_counter.tlv">Counter and calculator in pipeline</a>
 
+## Validity
 
+Validity in TL-verilog - signal indicates validity of transaction and described as "when" scope else it will work as don't care. Denoted as ```?$valid```. 
+Validity provides easier debug, cleaner design, better error checking, automated clock gating.
+* <a href = ""> 2 cycle calculator with validity </a> 
