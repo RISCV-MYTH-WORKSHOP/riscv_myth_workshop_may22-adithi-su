@@ -5,7 +5,7 @@
    m4_makerchip_module   // (Expanded in Nav-TLV pane.)
 \TLV
    $reset = *reset;
-   $val1[31:0] = >>1$out[31:0]; //value of previous output
+   $val1[31:0] = >>1$out[31:0]; //value of the signal out 1 cycle before, >>2$var would give the value from 2 cycles before and so on
    $val2[31:0] = $rand2[3:0];
    $op[1:0] = $rand3[1:0];
    
