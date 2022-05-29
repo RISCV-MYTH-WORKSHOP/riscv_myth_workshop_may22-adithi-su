@@ -32,4 +32,14 @@ Code is written under ```|pipe``` scope with stages defined as ```@1```,```@2```
 
 Validity in TL-verilog - signal indicates validity of transaction and described as "when" scope else it will work as don't care. Denoted as ```?$valid```. 
 Validity provides easier debug, cleaner design, better error checking, automated clock gating.
-* <a href = ""> 2 cycle calculator with validity </a> 
+```
+|calc
+@1
+$valid = ...;
+?$valid
+    @1 
+    ...
+    @2
+    ...
+```
+* <a href = "https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_may22-adithi-su/blob/master/Day3_5/calculator_validity.tlv"> 2 cycle calculator with validity </a> 
