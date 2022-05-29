@@ -42,7 +42,7 @@ spike pk <object filename>
 To debug the object file using spike -
 ```
 spike -d pk <object Filename>
-: until pc 0 to <location>
+: until pc 0 <to-location>
 : reg 0 a2 
 (To find the contents of register a2)
 :q 
